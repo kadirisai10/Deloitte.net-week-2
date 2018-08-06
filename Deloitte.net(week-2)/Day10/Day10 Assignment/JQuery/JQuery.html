@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".add-row").click(function(){
+
+                var type = $("#type").val();
+                if (type == "select") {
+                    alert("select pizza type");
+                    return;
+                }
+                var size = $("#size").val();
+                if (size == "select") {
+                    alert("select pizza type");
+                    return;
+                }
+
+
+                var topping = $('#top').val();
+                if (topping == "select") {
+                    alert("select pizza topping");
+}
+                var qty = $("#Qty").val();
+                if (qty < 1 || qty == "") {
+                    alert("enter the qty");
+                    return;
+
+                }
+                var markup = "<tr><td>"+type+"</td><td>"+size+"</td><td>"+topping+"</td><td>"+qty+"</td></tr>";
+                $("table tbody").append(markup);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <form>
+        Pizza Type    :<select id="type">
+        <option value="select">select</option>
+        <option value="Veg">Veg</option>
+        <option value="NonVeg">NonVeg</option>
+        </select><br />
+
+
+        Pizza Size    :<select id="size">
+        <option value="select">select</option>
+        <option value="small">small</option>
+        <option value="medium">medium</option>
+        <option value="large">large</option>
+        </select><br />
+
+
+        Pizza Topping :<select id="top">
+            <option value="select">select</option>
+            <option value="Tomatoes">Tomatoes</option>
+            <option value="Jalapeno Peppers">Jalapeno Peppers</option>
+            <option value="Olives">Olives</option>
+            <option value="Barbeque Chicken">Barbeque Chicken</option>
+            <option value="Spicy Chicken">Spicy Chicken</option>
+            <option value="Chunky Chicken">Chunky Chicken</option>
+            </select><br />
+
+        Quantity      :<input id="Qty" type="number" /><br />
+        <input type="button" class="add-row" value="Order" />
+
+    </form>
+    <table>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>

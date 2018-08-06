@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button").click(function () {
+                var name = $("#txtname").val();
+                if(name=="")
+                {
+                    alert("name cannot be blank");
+                }
+
+                var age = parseInt($("#txtage").val());
+                if (isNaN(age)) {
+                    alert("Enter age as number");
+                    return;
+                }
+
+
+                var pass = $("#txtpass").val();
+                if (pass == "") {
+                    alert("password cannot be blank");
+                    return;
+
+                }
+                if (pass.length < 3 || pass.length > 5) {
+                    alert("password should be 3 to 5 character length");
+                    return;
+                }
+
+
+                var g = ""
+                var gen = $("input:radio[name='gen']:checked");
+                alert(gen);
+                if (gen.length == 0)
+                {
+                    alert("select gender ");
+                    return;
+                }
+
+                else {
+                    g = gen.val();
+                }
+
+                var cab= ""
+                
+                if ($("#cbcab").prop("checked")==false)
+                    cab = "Not Required";
+                else
+                    cab = "Cab required";
+
+               
+
+
+                var loc = $("#loc").val();
+                if (loc == "select") {
+                    alert("select a location");
+                    return;
+
+                }
+                alert("data enterd:" + name + "," + "age:" + age + "," + "passwordvalid" + "," + g + "," + cab+"," + loc);
+            });
+        });
+    </script>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form>
+        <table border="1">
+            <tr>
+                <td>Enter Name:</td>
+                <td><input type="text" id="txtname" /></td>
+            </tr>
+
+            <tr>
+                <td>Enter age:</td>
+                <td><input type="number" id="txtage" /></td>
+            </tr>
+            <tr>
+                <td>Enter password:</td>
+                <td><input type="password" id="txtpass" /></td>
+            </tr>
+            <tr>
+                <td>Enter Gender:</td>
+                <td><input type="radio" name="gen" value="Male" />Male <input type="radio" name="gen" value="Female" />Female</td>
+
+            </tr>
+
+            <tr>
+                <td>Cab Facility?</td>
+                <td><input type="checkbox" id="cbcab" /></td>
+            </tr>
+            <tr>
+                <td>Select Location</td>
+                <td>
+                    <select id="loc">
+                        <option value="select">select</option>
+                        <option value="Ban">bangalore</option>
+                        <option value="Hyd">Hyd</option>
+                        <option value="Mum">Mum</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td><button >validate</button></td>
+            </tr>
+
+
+        </table>
+    </form>
+</body>
+</html>

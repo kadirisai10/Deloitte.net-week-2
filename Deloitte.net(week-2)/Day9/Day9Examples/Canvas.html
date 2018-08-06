@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function draw()
+        {
+            var draw=document.getElementById("c");
+            var ctx=draw.getContext("2d");
+            ctx.fillStyle="rgb(200,10,50)";
+            ctx.fillRect(10,20,75,100);//x,y co-ordinate width length
+
+        }
+    </script>
+</head>
+<body>
+    <canvas width="300" height="300" id="c">
+        Your browser does not support canvas
+    </canvas>
+    <button onclick="draw()">Draw In canvas</button>
+</body>
+</html>

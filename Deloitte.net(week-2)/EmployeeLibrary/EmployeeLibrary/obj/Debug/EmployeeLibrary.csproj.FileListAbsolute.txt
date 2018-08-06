@@ -1,0 +1,5 @@
+c:\users\nexwave\documents\visual studio 2015\Projects\EmployeeLibrary\EmployeeLibrary\bin\Debug\EmployeeLibrary.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\EmployeeLibrary\EmployeeLibrary\bin\Debug\EmployeeLibrary.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\EmployeeLibrary\EmployeeLibrary\obj\Debug\EmployeeLibrary.csprojResolveAssemblyReference.cache
+c:\users\nexwave\documents\visual studio 2015\Projects\EmployeeLibrary\EmployeeLibrary\obj\Debug\EmployeeLibrary.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\EmployeeLibrary\EmployeeLibrary\obj\Debug\EmployeeLibrary.pdb

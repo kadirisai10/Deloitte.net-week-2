@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .table1 {
+            text-align: justify;
+            background-color: whitesmoke;
+            border: 3px solid lightgray;
+        }
+
+        .table2 {
+            border: 3px solid gray;
+            border-collapse: collapse;
+        }
+
+        .tblhead {
+            background-color: lightgray;
+        }
+
+        .tblodd {
+            background-color: white;
+        }
+
+        .tbleven {
+            background-color: whitesmoke;
+        }
+
+        .glow {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="10">
+         <tr>
+            <td>
+                <div>
+                    <h3>List Of Persons</h3>
+                    <table class="table2" cellpadding="10">
+                        <tr class="tblhead">
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr class="tblodd">
+                            <td>Shahzad</td>
+                            <td>Male</td>
+                            <td>30</td>
+                            <td>Lahore</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                        <tr class="tbleven">
+                            <td>Danial</td>
+                            <td>Male</td>
+                            <td>34</td>
+                            <td>Islamabad</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                        <tr class="tblodd">
+                            <td>Sara</td>
+                            <td>Female</td>
+                            <td>34</td>
+                            <td>Karachi</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                        <tr class="tbleven">
+                            <td>Tahir</td>
+                            <td>Male</td>
+                            <td>38</td>
+                            <td>Lahore</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <h3>Add/Update Person Form</h3>
+                    <table class="table1" cellpadding="3">
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input class="glow" type="text" id="txtname" /></td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender:
+                            </td>
+                            <td>
+                                <input type="radio" name="gender" id="txtmale" value="Male" />Male
+                                <input type="radio" name="gender" id="txtfemale" value="Female" />Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>Age:</td>
+                            <td><input class="glow" type="number" id="txtage" /></td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                City:
+                            </td>
+                            <td>
+                                <select class="glow">
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Islamabad">Bangalore</option>
+                                    <option value="Karachi">Chennai</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="glow" onclick="reset()">reset</button>
+                            </td>
+                            <td>
+                                <button class="glow" onclick="add()">add</button>
+                                <button class="glow" onclick="update()">update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript">
+        var d = new Date;
+        document.write(d);
+        document.write("<br/>");
+        document.write( d.getDate());
+        document.write("<br/>");
+        var hrs=d.getHours();
+        if (hrs < 12)
+            alert("Good Morning");
+        else if(hrs>12&&hrs<=16)
+            alert("Good Afternoon")
+        else if(hrs>16&&hrs<19)
+            alert("Good evening")
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                var d = $("#data").val();
+                $("#lst").append("<li>" + d + "<li>");
+            });
+            $("#b2").click(function () {
+                var d = $("#data").val();
+                $("#lst").prepend("<li>" + d + "<li>");
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div>
+        Enter Data:<input type="text" id="data"/>
+    </div>
+    <ol id="lst"></ol>
+    <button id="b1">Append</button>
+    <button id="b2">Prepend</button>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AssignmentDBModelStoreContainer" CdmEntityContainer="AssignmentDBEntities2">
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="AssignmentDBModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="VisitorsId" ColumnName="VisitorsId" />
+          <ScalarProperty Name="Fname" ColumnName="Fname" />
+          <ScalarProperty Name="Lname" ColumnName="Lname" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Visiting" ColumnName="Visiting" />
+          <ScalarProperty Name="IdType" ColumnName="IdType" />
+          <ScalarProperty Name="IdNum" ColumnName="IdNum" />
+          <ScalarProperty Name="vehicle" ColumnName="vehicle" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="checkinTime" ColumnName="checkinTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

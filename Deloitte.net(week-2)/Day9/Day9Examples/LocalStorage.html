@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function Add()
+        {
+            if(typeof(Storage)=='undefined')
+            {
+                document.getElementById("result").innerText = "Your browser does not support storage";
+            }
+
+            else
+            {
+                var name = document.getElementById("txtname").value;
+                var age = document.getElementById("txtage").value;
+                localStorage.setItem("NAME", name);
+                localStorage.setItem("AGE", age);
+                document.getElementById("result").innerText = "data Added";
+            }
+        }
+
+        function Read()
+        {
+            document.getElementById("result").innerText = localStorage.getItem("NAME")+","+localStorage.getItem("AGE");
+            
+        }
+    </script>
+            
+</head>
+<body>
+    Enter Name:<input type="text" id="txtname"/>
+    Enter age:<input type="number" id="txtage"/>
+    <br/>
+    <button onclick="Add()">Save Storage</button>
+    <button onclick="Read()">ReadStorage</button>
+    <span id="result"></span>
+</body>
+</html>

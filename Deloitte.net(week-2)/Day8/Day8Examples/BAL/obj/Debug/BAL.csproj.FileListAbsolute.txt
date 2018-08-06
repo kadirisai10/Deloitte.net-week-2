@@ -1,0 +1,11 @@
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\BAL.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\BAL.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\obj\Debug\BAL.csprojResolveAssemblyReference.cache
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\obj\Debug\BAL.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\obj\Debug\BAL.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\DAL.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\Entity.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\EntityFramework.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\DAL.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\Entity.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day8Examples\BAL\bin\Debug\EntityFramework.xml

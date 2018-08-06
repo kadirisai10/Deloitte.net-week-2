@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        function validate() {
+            var name = document.getElementById("txtname").value;
+            if (name == "") {
+                alert("Name cannot be blank");
+                return;
+            }
+
+            var g = "";
+            var gender=document.getElementsByName("gender");
+            if (gender[0].checked)
+                g = gender[0].value;
+            if (gender[1].checked)
+                g = gender[1].value;
+            if (!(gender[0].checked || gender[1].checked)) {
+                alert("Selct gender");
+                return
+            }
+
+            var age = parseInt(document.getElementById("txtage").value);
+            if (isNaN(age)) {
+                alert("Age cannot be blank");
+
+            }
+
+            var loc = document.getElementById("loc").value;
+            if (loc == "select") {
+                alert("select a location");
+                return;
+
+            }
+            alert("Data you entered: " + name + "," + age + "," + g + "," + age + "," + loc);
+
+
+        }
+    </script>
+    <title></title>
+    <style>
+        .table1 {
+            text-align: justify;
+            background-color: whitesmoke;
+            border: 3px solid lightgray;
+        }
+
+        .table2 {
+            border: 3px solid gray;
+            border-collapse: collapse;
+        }
+
+        .tblhead {
+            background-color: lightgray;
+        }
+
+        .tblodd {
+            background-color: white;
+        }
+
+        .tbleven {
+            background-color: whitesmoke;
+        }
+
+        .glow {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="10">
+        <tr>
+            <td>
+                <div>
+                    <h3>List Of Persons</h3>
+                    <table class="table2" cellpadding="10">
+                        <tr class="tblhead">
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr class="tblodd">
+                            <td>Shahzad</td>
+                            <td>Male</td>
+                            <td>30</td>
+                            <td>Lahore</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                        <tr class="tbleven">
+                            <td>Danial</td>
+                            <td>Male</td>
+                            <td>34</td>
+                            <td>Islamabad</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                        <tr class="tblodd">
+                            <td>Sara</td>
+                            <td>Female</td>
+                            <td>34</td>
+                            <td>Karachi</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                        <tr class="tbleven">
+                            <td>Tahir</td>
+                            <td>Male</td>
+                            <td>38</td>
+                            <td>Lahore</td>
+                            <td>Update/Remove</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <h3>Add/Update Person Form</h3>
+                    <table class="table1" cellpadding="3">
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input class="glow" type="text" id="txtname" /></td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender:
+                            </td>
+                            <td>
+                                <input type="radio" name="gender" id="txtmale" value="Male" />Male
+                                <input type="radio" name="gender" id="txtfemale" value="Female" />Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>Age:</td>
+                            <td><input class="glow" type="number" id="txtage" /></td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                City:
+                            </td>
+                            <td>
+                                <select class="glow" id="loc">
+                                    <option value="select">select</option>
+                                    <option value="Lahore">Lahore</option>
+                                    <option value="Islamabad">Islamabad</option>
+                                    <option value="Karachi">Karachi</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="glow" onclick="reset()">reset</button>
+                            </td>
+                            <td>
+                                <button class="glow" onclick="validate()">validate</button>
+                                <button class="glow" onclick="update()">update</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><br /></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+
+    </table>
+</body>
+</html>
